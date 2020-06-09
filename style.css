@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#back {
+    width: 500px;
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    background-color: #222831;
+    padding: 10px;
+    color: white;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+#parent {
+    display: flex;
+}
+
+.start-btn {
+    background-color: #29a19c;
+    color: white;
+    margin: 10px;
+}
+
+#one-level-div,
+#multiple-level-div {
+    display: none;
+    background-color: #364357;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#game-info-parent {
+    padding: 0;
+    display: none;
+}
+
+#game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(47, 66, 102);
+    padding: 10px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+#main {
+    /* width: 300px; */
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: yellow;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(47, 255, 47);
+    border: solid 1px darkgreen;
+    border-radius: 10%;
+}
+
+.not-mine {
+    text-align: center;
+    background-color: darkgrey;
+    color: gold;
+}
+
+#alert {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h5 , h6{
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Minesweeper</title>
+</head>
+
+<body >
+    <div id="back" >
+
+        <div id="parent" class="flex-column justify-content-center align-items-center">
+            <h1>Minesweeper</h1>
+            <h3>نوع بازی را انتخاب کنید</h3>
+            <div id="frist-div">
+                <input id="btn1" class="btn btn-success start-btn" type="button" value="تک مرحله ای">
+                <input id="btn2" class="btn btn-success start-btn" type="button" value="چند مرحله ای">
+            </div>
+            <div id="one-level-div" class="">
+                <div class="level-child d-flex flex-column justify-content-center align-items-center">
+                    <h4>تعداد سلول های ضلع زمین بازی را مشخص کنید</h4>
+                    <input class="form-control col-7 mt-1" id="cells-number1" min="5" max="30" type="number"
+                        placeholder="یک عدد از 5 تا 30 وارد کنید">
+                </div>
+                <div class="level-child d-flex flex-column justify-content-center align-items-center">
+                    <h4>سطح بازی را تعیین کنید</h4>
+                    <div class="d-flex flex-row justify-content-center align-items-center col-10">
+                        <span>1</span>
+                        <input type="range" class="custom-range mt-2 mx-2 col-8" min="1" max="4" id="range">
+                        <span>4</span>
+                    </div>
+                    <div class="level-child d-flex flex-row-reverse justify-content-center align-items-center">
+                        <h4>تایمر </h4>
+                        <input class="form-control col-5 mt-1 mx-2" id="time-check1" type="checkbox" checked>
+                    </div>
+
+                    <input type="button" class="btn btn-success mt-3 col-10" id="btn-start1" value="شروع">
+                </div>
+
+
+            </div>
+            <div id="multiple-level-div" class="">
+                <div class="level-child d-flex flex-column justify-content-center align-items-center">
+                    <h4>تعداد سلول های ضلع زمین بازی را مشخص کنید</h4>
+                    <input class="form-control col-7 mt-1" id="cells-number2" min="5" max="30"
+                        placeholder="یک عدد از 5 تا 30 وارد کنید" type="number">
+                    <div class="level-child d-flex flex-row-reverse justify-content-center align-items-center">
+                        <h4>تایمر </h4>
+                        <input class="form-control col-5 mt-1 mx-2" id="time-check2" type="checkbox" checked>
+                    </div>
+                    <input type="button" class="btn btn-success mt-3 col-10" id="btn-start2" value="شروع">
+                </div>
+            </div>
+        </div>
+        <div id="main" oncontextmenu="return false;">
+
+        </div>
+        <div id="game-info-parent">
+            <div id="game-info">
+
+                <div>
+                    <h2 id="time">Let's Go</h2>
+                </div>
+                <h6>برای علامت گذاری روی مین ها از کلیک راست استفاده کنید</h6>
+                <h6 id="about"></h6>
+                <h5 id="showLevel"></h5>
+                <input class="btn btn-info col-11 mt-1" type="button" id="startAgain" value="شروع مجدد">
+                <input class="btn btn-info col-11 mt-1" type="button" onclick="location.reload()" value="بازگشت به منو">
+                <div id="alert">
+                    <h5 id="alert-text"></h5>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
+    </script>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
